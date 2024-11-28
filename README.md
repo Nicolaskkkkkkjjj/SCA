@@ -1,2 +1,3 @@
 # SCA
-Big trabalho from nicolas e companhia 
+Não precisa agradecer ok?
+aceito uma boa xicara de café como retribuição 
