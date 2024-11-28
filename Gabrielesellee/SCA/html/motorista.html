@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Motorista</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body class="driver-registration">
+    <div class="driver-registration">
+        <div class="driver-registration">
+            <div class="container">
+                <div class="sidebar">
+                    <img src="https://github.com/Nicolaskkkkkkjjj/imagens_sites/blob/main/imagem_2024-11-06_213050220.png?raw=true" alt="Logo" class="logo">
+                    <label>Nome:</label>
+                    <label>E-mail:</label>
+                    <label>Telefone:</label>
+                    <label>CPF:</label>
+                    <label>Senha:</label>
+                    <label>Repetir Senha:</label>
+                    <label>CNH:</label>
+                    <a href="home-screen-driver.html" class="back-button">Voltar a tela inicial</a>
+                </div>
+                <div class="form-container">
+                    <h2>Realize aqui seu cadastro SR. <span>Motorista</span></h2>
+                    <form>
+                        <input type="text" name="nome" placeholder="Digite seu nome completo">
+                        <input type="email" name="email" placeholder="Digite seu E-mail">
+                        <input type="text" name="telefone" placeholder="Digite seu telefone">
+                        <input type="text" name="cpf" placeholder="digite seu CPF (apenas números)">
+                        <input type="password" name="senha" placeholder="Digite sua senha e garanta que tenha 8 digitos">
+                        <input type="password" name="repetir-senha" placeholder="Repita sua senha">
+                        <input type="text" name="cnh" placeholder="Digite os números da sua Nacional de Habilitação">                       
+                        <div class="action-buttons">
+                            <button type="button" class="delete">Excluir</button>
+                            <button type="submit" class="save">Salvar</button>
+                        </div>
+                    </form>
+                    <p class="obs">Obs: Confirme que as suas informações são verdadeiras</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function excluirCampos() {
+            const inputs = document.querySelectorAll('.form-container input[type="text"], .form-container input[type="email"], .form-container input[type="password"]');
+            inputs.forEach(input => input.value = '');
+            alert("Os campos foram excluídos com sucesso.");
+        }
+        document.querySelector('.delete').addEventListener('click', excluirCampos);
+      
+        document.querySelector('.save').addEventListener('click', function(event){
+            event.preventDefault();
+            window.location.href = 'home-screen-driver.html';
+        }); 
+    </script>
+</body>
+</html> 
