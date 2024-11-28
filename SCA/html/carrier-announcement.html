@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="carrier-announcements">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anúncio de Cargas</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body class="carrier-announcements">
+    <div class="carrier-announcements-container">
+        <div class="sidebar">
+            <img src="https://github.com/Nicolaskkkkkkjjj/imagens_sites/blob/main/imagem_2024-11-06_213050220.png?raw=true" alt="Logo" class="logo">
+            <div class="menu">
+                <a href="home-screen-carrier.html">Menu</a>
+                <a href="carrier-announcement.html">Tela inicial</a>
+                <a href="Cargas.html">Cadastro</a>
+                <a href="carrier-announcement.html" class="cargas-link">Anunciar Cargas</a>
+                <a href="index.html" class="back-button button-style">Voltar a tela inicial</a>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="wave-background"></div>
+            <div class="user-info">
+                <img src="https://github.com/Nicolaskkkkkkjjj/imagens_sites/blob/main/image-removebg-preview%20(7).png?raw=true" alt="Avatar" class="avatar">
+                <h2>Nome da transportadora</h2>
+                <p>transportadoraX@gmail.com</p>
+                <p>49 99999 33333</p>
+                <p>2.345.678/0001-00</p>
+            </div>
+            <div class="carrier-announcements carga-container">
+                <h2 class="carga-title">Cargas Anunciadas</h2>
+                <div class="carga-grid">
+                    <div class="carga-item"><img src="https://github.com/Nicolaskkkkkkjjj/imagens_sites/blob/main/image.png?raw=true" 
+                        href="Cargas.html" alt="Carga"></div>
+                    <div class="carga-item"><img src="https://github.com/Nicolaskkkkkkjjj/imagens_sites/blob/main/image-removebg-preview%20(10).png?raw=true" alt="Carga"></div>
+                    <div class="carga-item"><img src="https://github.com/Nicolaskkkkkkjjj/imagens_sites/blob/main/image-removebg-preview%20(11).png?raw=true"></div>
+                    <div class="carga-item">Não há cargas anunciadas</div>
+                    <div class="carga-item">Não há cargas anunciadas</div>
+                    <div class="carga-item">Não há cargas anunciadas</div>
+                    <div class="carga-item">Não há cargas anunciadas</div>
+                    <div class="carga-item">Não há cargas anunciadas</div>
+                    <div class="carga-arrow">&#8595;</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const backButton = document.querySelector('.back-button');
+        backButton.addEventListener('click', () => {
+            window.location.href = 'index.html';
+        });
+    </script>
+</body>
+</html>
